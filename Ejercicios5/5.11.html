@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>5.11</title>
+        <style type="text/css">
+            #ejercicio {
+                position: relative;
+                margin-left: 35%;
+            }
+            #ejercicio img {
+                position: absolute;
+                left: 0;
+            }
+            #ejercicio:hover .top1 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear;
+                transition: opacity 3s linear;
+            }
+            #ejercicio:hover .top2 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 3s;
+                transition: opacity 3s linear 3s;
+            }
+            #ejercicio:hover .top3 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 6s;
+                transition: opacity 3s linear 6s;
+            }
+            #ejercicio:hover .top4 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 9s;
+                transition: opacity 3s linear 9s;
+            }
+            #ejercicio:hover .top5 {
+                opacity: 0;
+                -webkit-transition: opacity 3s linear 12s;
+                transition: opacity 3s linear 12s;
+            }
+        </style>
+    </head>
+    <body>
+       
+        <div id="ejercicio">
+            <img class="top5" src="fase5.jpg" width="450" height="600" alt="fase1">
+            <img class="top4" src="fase4.jpg" width="450" height="600" alt="fase2"> 
+            <img class="top3" src="fase3.png" width="450" height="600" alt="fase3"> 
+            <img class="top2" src="fase2.jpg" width="450" height="600" alt="fase4"> 
+            <img class="top1" src="fase1.jpg" width="450" height="600" alt="fase5"> 
+        </div>
+    </body>
+</html>

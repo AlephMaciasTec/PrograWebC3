@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset = "utf-8">
+<title>5.7</title>
+<style type = "text/css">
+    div
+    {
+        width: 500px;
+        height: 500px;
+        border: 3px solid navy;
+        padding: 5px 20px;
+        text-align: center;
+        background: -webkit-gradient(
+            linear, center top, center bottom,
+            color-stop(15%,White), color-stop(50%,lightsteelblue),
+            color-stop(75%,navy));
+        background: -moz-linear-gradient(
+            top center, white 15%, lightsteelblue 50%,navy 75%);
+        background: linear-gradient(
+        top, White 15%, lightsteelblue 50%, navy 75%);
+              float: left;
+              margin-right: 15px;
+    }
+
+#diagonal {
+    width: 500px;
+    height: 500px;
+    border: 3px solid purple;
+    padding: 5px 20px;
+    text-align: center;
+    background: -webkit-gradient(
+        linear,left top, right bottom,
+        color-stop(red), color-stop(orange),color-stop(yellow),color-stop(green)color-stop(blue),color-stop(Indigo),color-stop(violet));
+    background: -moz-linear-gradient(
+        top left,red ,orange ,yellow ,green , blue ,  indigo , violet  );
+    background: linear-gradient( 135deg,red ,orange ,yellow ,green , blue ,  indigo , violet  );
+
+}
+</style>
+    </head>
+    <body>
+        <div id = "diagonal"><h2>Gradiante lineal diagonal</h2></div>
+    </body>
+</html>
