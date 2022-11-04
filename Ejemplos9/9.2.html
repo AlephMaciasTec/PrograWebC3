@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Maximum of Three Values</title>
+        <style type = "text/css">
+            p { margin: 0; }
+        </style>
+        <script>
+            var entrada1 = window.prompt( "Escriba el primer numero", "0" );
+            var entrada2 = window.prompt( "Escriba el segundo numero", "0" );
+            var entrada3 = window.prompt( "Escriba el tercer numero", "0" ); 
+    
+            var valor1 = parseFloat( entrada1 );
+            var valor2 = parseFloat( entrada2 );
+            var valor3 = parseFloat( entrada3 );
+            var ValorMax = maximo( valor1, valor2, valor3 );
+
+            document.writeln( "<p>Primer numero: " + valor1 + "</p>" +
+                "<p>Segundo Numero: " + valor2 + "</p>" +
+                "<p>Tercer Numero: " + valor3 + "</p>" +
+                "<p>El Maximo es: " + ValorMax + "</p>" );
+            function maximo( x, y, z )               
+            {                                         
+                return Math.max( x, Math.max( y, z ) );
+            }                                    
+
+        </script>
+    </head><body></body>
+</html>

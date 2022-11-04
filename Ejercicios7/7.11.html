@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--Ejercicio 7.11-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7.11</title>
+    <script>
+        document.writeln("<h2>Los conductores se preocupan acerca del kilometraje de sus automoviles. Un conductor ha llevado el control de varios "+
+            "reabastecimientos de gasolina , registrando los kilometros conducidos y los litros usados en cada viaje. Desarrolle "+
+            "una secuencia de comandos que reciba como entrada los kilometros conducidos  y los litros usados por cada viaje.La "+
+            "secuencia de comandos debe calcular y producir el texto de HTML5 que muestre el número de kilometros por litro "+
+            "obtenidos en cada viaje, y debe imprimir el total de kilometros por litro obtenidos en todos los reabastecimientos "+
+            "hasta este punto. Use dialogos prompt para obtener los datos del usuario </h2>");
+        var reabastecimientos;
+        var kilometros;
+        var gasolina;
+        var totalgasolina;
+        var totalkilometros;
+        var valorKilometros;
+        var valorgasolina;
+        var sumadegas;
+        var sumadekil;
+        
+        totalgasolina = 0;
+        totalkilometros = 0;
+        reabastecimientos = 0;
+        kilometros = window.prompt("Ingrese la cantidad de kilometros recorridos hasta el momento: ","0");
+        gasolina = window.prompt("Ingrese los litros de gasolina gastados en este recorrido: .En caso de terminar -0","0");
+        valorKilometros = parseInt(kilometros);
+        valorgasolina =  parseInt(gasolina);
+
+        while (valorgasolina != -0){
+            totalgasolina = totalgasolina + valorgasolina;
+            totalkilometros = totalkilometros + valorKilometros;
+            reabastecimientos = reabastecimientos +1;
+            gasolina = window.prompt("Ingrese los litros de gasolina gastados en este recorrido: .En caso de terminar -0","0");
+            kilometros = window.prompt("Ingrese la cantidad de kilometros recorridos hasta el momento: ","0");
+            valorgasolina = parseInt(gasolina);
+            valorKilometros = parseInt(kilometros);
+        }
+        if (reabastecimientos != 0){
+            sumadegas = totalgasolina;
+            document.writeln ("<h2>El total de Gasolina gastada es igual a: "+ sumadegas + "</h2>");
+            sumadekil = totalkilometros;
+            document.writeln ("<h2>El total de Kilometros recorridos es de: "+ sumadekil + "</h2>");
+
+        }
+        else 
+        {
+            document.writeln ("<h2> Usted no ha ingresado Gasolina </h2>");
+        document.writeln ("<h2> Usted no ha recorrido ningun kilometro </h2>");
+        }
+      
+
+        
+       // while (valorKilometros != -0){ 
+        //    totalkilometros = totalkilometros + valorKilometros;
+          //  reabastecimientos = reabastecimientos +1;
+          //  kilometros = window.prompt("Ingrese la cantidad de kilometros recorridos hasta el momento: ","0");
+           // valorKilometros = parseInt(kilometros);
+     //   }
+      //  if (reabastecimientos != 0){
+        //    sumadekil = totalkilometros;
+          //  document.writeln ("<h2>El total de Kilometros recorridos es de: "+ sumadekil + "</h2>");
+        //}
+        //else 
+        //document.writeln ("<h2> Usted no ha recorrido ningun kilometro </h2>");
+       
+
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

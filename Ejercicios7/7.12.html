@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--Ejercicio 7.12-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7.12</title>
+    <script>
+        document.writeln("<h2>Desarrolle una secuencia de comandos que determine si alguno de los clientes de una tienda de departamentos se ha "+
+            "excedido del límite de crédito en una cienta. Para cada cliente se tienen los siguientes datos: "+
+            "<ol>"+"<li> El número de cuenta </li>"+"<li>El saldo al inicio del mes </li>"+"<li>El total de todos los artículos cargados por el cliente en el mes </li>"+ 
+            "<li>El total de todos los creditos aplicados a la cuenta del cliente en el mes</li>"+"<li>El límite de crédito permitido</li>"+"</h2>");
+        
+        var cuenta;
+        var saldoinicio;
+        var totalarticulos;
+        var totalcreditos;
+        var limitedecredito;
+        var saldo;
+        var totala;
+        var totalc;
+        var total;
+        
+        limitedecredito = window.prompt("Indique cual es el limite del credito: ");
+        cuenta = parseInt(limitedecredito);
+        saldoinicio = window.prompt("Indique el saldo inicial de la cuenta: ");
+        saldo = parseInt(saldoinicio);
+        totalarticulos = window.prompt("Indique el cargo de articulos adquiridos: ");
+        totala = parseInt(totalarticulos);
+        totalcreditos = window.prompt("Indique los creditos abonados: ");
+        totalc = parseInt(totalcreditos);
+
+        total = saldo + totala - totalc;
+        if (total > cuenta){
+
+        document.writeln("<p>Se excedió el límite de su crédito<p>");
+
+        }
+
+        else {
+
+            document.writeln("<p>Su saldo es de: "+ total + "</p>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

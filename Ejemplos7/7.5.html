@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Analisis de los resultados de un examen</title>
+        <script>
+            var aprovados = 0;
+            var reprobados = 0;
+            var estudiante = 1;
+            var resultado;
+            while ( estudiante <= 10 ){
+                resultado = window.prompt( "Escriba el resuultado (1=aprovado, 2= reprobado)", "0" );
+                if ( resultado == "1" )
+                aprovados = aprovados + 1;
+                else
+                reprobados = reprobados + 1;
+                estudiante = estudiante + 1;
+            }
+            document.writeln( "<h1>Resultados del examen</h1>" );
+            document.writeln( "<p>Aprobados: " + aprovados + 
+                "; Reprobados: " + reprobados + "</p>" );
+            if ( aprovados > 8 )
+                document.writeln( "<p>Bono para el instructor!</p>" );
+      </script>
+   </head><body></body>
+</html>

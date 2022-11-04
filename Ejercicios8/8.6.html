@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 8.6</title>
+    <script>
+        var iteraciones = window.prompt("Escriba el numero de iteraciones");
+        var contador=0;
+        var numeroTemp;
+        var comparador=0;
+        
+       
+        while (contador < iteraciones) 
+        {
+            numeroTemp = window.prompt("Digite un numero");
+
+            if (numeroTemp>=0){
+
+            
+                if (contador==0){
+                    comparador=numeroTemp;
+                }
+                    
+                if (comparador>numeroTemp){
+                    comparador=numeroTemp;
+                    ++contador;
+                }     
+                else{
+                    ++contador;
+                }
+            }       
+            else{
+                window.alert("Digite un numero mayor a 0 ");
+            }
+                 
+            
+        }
+                 window.alert("El menor de los valores es: " + comparador);
+            
+
+    </script>
+</head>
+
+</html>

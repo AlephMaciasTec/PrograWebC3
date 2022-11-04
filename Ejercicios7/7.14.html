@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--Ejercicio 7.14-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7.14</title>
+</head>
+<body>
+
+    <img src="Imagenes/imagen 5.jpeg">
+    <script>
+        var sueldo;
+        var vals;
+        var horas;
+        var valh;
+        var conte;
+        var sueldot;
+        var sueldot1;
+
+        conte = 1;
+        sueldot = 0;
+
+        sueldo = window.prompt("Ingrese el costo de la cuota normal: ", "0");
+        vals = parseInt(sueldo);
+        sueldot = vals/2;
+        sueldot1 = sueldot + vals;
+
+
+        while(conte <= 3){
+
+        horas = window.prompt("Ingrese las horas lavoradas de cada empleado: ","0");
+        valh = parseInt(horas);
+
+        if (valh == 40 )
+
+        document.writeln("<h3>Su sueldo bruto es de: $"+ vals + " .<h3>");
+        else if (valh > 41)
+        document.writeln("<h3>Su sueldo bruto es de: $"+ sueldot1 + " .</h3>");
+        
+        else if (valh < 40)
+        document.writeln("<h3> No ha trabajado las horas sufucuientes </h3>");
+
+
+        
+        conte = conte + 1;
+
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--Ejercicio 7.13-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7.13</title>
+    <script>
+        document.writeln("<h2>Una empresa grande paga a sus vendedores mediante comisiones. Los vendedores reciben $200 por semana, má el "+
+            "9 por ciento de sus ventas brutas durante esa semana. Por ejemplo, un vendedor que vende $5000 de mercancía en "+
+            "una semana, recibe $200 mas el 9 por ciento de 5000, o un total de $650. Usted acaba de recibir una lista de los "+
+            "artículos vendidos por cada vendedor. </h2> ");
+        var productos;
+        var producto1 = 239.99;
+        var producto2 = 129.75;
+        var producto3 = 99.95;
+        var producto4 = 350.89;
+        var total;
+        var contadorp;
+        var valorp;
+        var operacion;
+        var semana;
+        var valsemana;
+        var operacion1;
+        var operacion2;
+
+        total = 0;
+        contadorp = 0;
+        semana = window.prompt("Ingrese las semanas trabajadas: ");
+        valsemana = parseInt(semana);
+        productos = window.prompt("Ingrese el costo de producto que vendio el trabajador: "+
+        "Artículo 1 $239.99, "+"Artículo 2 $129.75, "+"Artículo 3 $999.95, "+ "Artículo 4 $350.89. " +"Para terminar de agregar productos -1","0");
+
+        valorp = parseInt(productos);
+        
+        while(valorp != -1){
+            total = total + valorp;
+            contadorp = contadorp +1;
+            productos = window.prompt("Ingrese el costo de producto que vendio el trabajador: "+
+            "Artículo 1 $239.99, "+"Artículo 2 $129.75, "+"Artículo 3 $999.95, "+ "Artículo 4 $350.89. " +"Para terminar de agregar productos -1","0");
+
+        valorp = parseInt(productos);
+
+        }
+     //   if (valorp != 1){
+
+       // valorp = producto1;
+      //  }
+
+        //if (valorp != 2){
+
+      //  valorp = producto2;
+        //}
+
+       // if (valor != 3){
+
+        //valorp = producto3;
+        //}
+
+       // if (valor != 4){
+
+       // valorp = producto4;
+       // }
+
+
+        if (contadorp != 0){
+            operacion = 200 *  valsemana;
+            operacion1 = total * 0.09;
+            operacion2 = operacion1 + operacion;
+            document.writeln("<h3>El cantidad que el trabajador vendio en "+ valsemana +" semana/s fue de : $"+ total +"pesos.</h3>");
+            document.writeln("<h3>Su pago sera de: $"+operacion2+" pesos</h3>");
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

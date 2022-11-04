@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>Ejemplo de alcance</title>
+        <style type = "text/css">
+            p{ margin: 0px; }
+            p.space { margin-top: 10px; }
+        </style>
+        <script>
+            var salida;
+            var x = 1;
+
+            function Iniciar()
+            {
+                var x = 5;
+
+                salida = "<p> La x local en iniciar es " + x + "</p>";
+                funcionA();
+                funcionB();
+                funcionA();
+                funcionB();
+                salida += "<p class='espacio'>la x local en iniciar es " + x + 
+                "</p>";
+                document.getElementById( "resultados" ).innerHTML = salida;
+            }
+            function funcionA()
+            {
+                var x = 25;
+                salida += "<p class='espacio'>la x local en la funcion A es " + x +
+                " Despues de entrar a funcionA</p>";
+                ++x;
+                salida += "<p>la x local en la funcionA es " + x +
+                " antes de salir de funcionA</p>";
+            }
+            function funcionB()
+            {
+                salida += "<p class='espacio'>La variable global x es " + x +
+                " al antrar a la funcion B";
+                x *= 10;
+                salida += "<p>la variable global x es " + x + 
+                " al salir de la funcion B</p>";
+            }
+            window.addEventListener( "load", Iniciar, false );
+        </script>
+    </head>
+    <body onload = "Iniciar()">
+        <div id = "resultados"></div>
+    </body>
+</html>

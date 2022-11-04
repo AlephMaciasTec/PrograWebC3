@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Programa de promedio de clase</title>  
+      <script>
+
+        var total;
+        var contadordecalificaciones;
+        var calificacion;
+        var valorcalificacion;
+        var promedio;
+        total = 0;
+        contadordecalificaciones = 1;
+        while ( contadordecalificaciones <= 10 ){
+            calificacion = window.prompt( "Ingrese una calificacion:", "0" );
+            valorcalificacion = parseInt( calificacion );
+            total = total + valorcalificacion;  
+            contadordecalificaciones = contadordecalificaciones + 1;
+        }
+        promedio = total / 10;
+        document.writeln( 
+           "<h1>El promedio de la clase es " + promedio + "</h1>" );
+      </script>
+   </head><body></body>
+</html>
